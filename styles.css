@@ -1,0 +1,126 @@
+body {
+    background-color: #192A32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    min-height: 100px;
+}
+
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-logo b:nth-child(1) {
+    color: #32C3C0;
+    font-size: 32px;
+    font-weight: 800;
+
+}
+
+.game-logo b:nth-child(2) {
+    color: #F4B43C;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.game-turn {
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 4px 0 #0F202A;
+    font-size: 14px;
+    background-color: #1F3540;
+    color:#A9BFCA;
+}
+
+.game-reset {
+    height: 36px;
+    width: 36px;
+    border-radius: 7px;
+    background-color: #A8BEC9;
+    box-shadow: 0 3px 0  #6F8895;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.game-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.game-tile {
+    width: calc((500px/3) - 20px);
+    height: calc((460px/3) - 20px);
+    background-color: #1F3540;
+    box-shadow: 0 8px 0 #0F202A;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    cursor: pointer;
+    
+}
+
+.game-tile.X {
+    color: #31C4BE;
+}
+.game-tile.O {
+    color: #F4B43C;
+}
+
+
+.game-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.game-stats-box {
+    width: calc((500px/3) - 20px);
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #002D33;
+}
+
+.game-stats-header {
+    font-size: 12px;
+}
+.game-stats-count {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.game-stats-box.player {
+    background-color: #31C4BE;
+}
+.game-stats-box.tie {
+    background-color: #A8BEC9;
+}
+
+.game-stats-box.cpu {
+    background-color: #F4B43C;
+}

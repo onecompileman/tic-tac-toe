@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game">
+      <div class="game-header">
+        <div class="game-logo">
+          <b>X</b>
+          <b>O</b>
+        </div>
+        <div class="game-turn"><b id="turn">X</b> TURN</div>
+
+        <div class="game-reset" onclick="reset()">
+          <img src="assets/images/refresh.png" height="18" alt="Refresh" />
+        </div>
+      </div>
+
+      <div class="game-body">
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="0"
+          data-row="0"
+        ></div>
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="1"
+          data-row="0"
+        ></div>
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="2"
+          data-row="0"
+        ></div>
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="0"
+          data-row="1"
+        ></div>
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="1"
+          data-row="1"
+        ></div>
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="2"
+          data-row="1"
+        ></div>
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="0"
+          data-row="2"
+        ></div>
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="1"
+          data-row="2"
+        ></div>
+        <div
+          class="game-tile"
+          onclick="makeMove(this)"
+          data-col="2"
+          data-row="2"
+        ></div>
+      </div>
+
+      <div class="game-footer">
+        <div class="game-stats-box player">
+          <span class="game-stats-header">X (YOU)</span>
+          <span class="game-stats-count" id="playerWinText">0</span>
+        </div>
+        <div class="game-stats-box tie">
+          <span class="game-stats-header">TIES</span>
+          <span class="game-stats-count" id="tiesText">0</span>
+        </div>
+        <div class="game-stats-box cpu">
+          <span class="game-stats-header">O (CPU)</span>
+          <span class="game-stats-count" id="cpuWinText">0</span>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
